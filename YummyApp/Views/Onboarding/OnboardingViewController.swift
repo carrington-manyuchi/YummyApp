@@ -28,10 +28,11 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         slides = [
-            OnboardingSlide(title: "Delicious DIshes", description: "Come and buy nice meal", image: #imageLiteral(resourceName: "slide3") ),
-            OnboardingSlide(title: "Delicious DIshes", description: "Come and buy nice meal", image: #imageLiteral(resourceName: "slide2") ),
-            OnboardingSlide(title: "Delicious DIshes", description: "Come and buy nice meal", image: #imageLiteral(resourceName: "slide1") )
+            OnboardingSlide(title: "Delicious Dishes", description: "Come and buy nice meal", image: #imageLiteral(resourceName: "slide3") ),
+            OnboardingSlide(title: "World -Class Chefs", description: "Come and buy nice meal", image: #imageLiteral(resourceName: "slide2") ),
+            OnboardingSlide(title: "Instant World Wide Delivery", description: "Come and buy nice meal", image: #imageLiteral(resourceName: "slide1") )
         ]
+        pageControl.numberOfPages = slides.count
         
     }
 

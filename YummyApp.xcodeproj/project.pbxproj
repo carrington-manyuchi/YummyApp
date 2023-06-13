@@ -16,6 +16,7 @@
 		8C9DD58B2A38931100299F2A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD58A2A38931100299F2A /* UIView+Extension.swift */; };
 		8C9DD58D2A38940B00299F2A /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD58C2A38940B00299F2A /* OnboardingSlide.swift */; };
 		8C9DD58F2A3896C500299F2A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD58E2A3896C500299F2A /* OnboardingCollectionViewCell.swift */; };
+		8C9DD5922A38D2A200299F2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD5912A38D2A200299F2A /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8C9DD58A2A38931100299F2A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8C9DD58C2A38940B00299F2A /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		8C9DD58E2A3896C500299F2A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C9DD5912A38D2A200299F2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		8C9DD5842A388F9100299F2A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8C9DD5902A38D28500299F2A /* Home */,
 				8C9DD5862A388FB500299F2A /* Onboarding */,
 			);
 			path = Views;
@@ -114,6 +117,14 @@
 				8C9DD58A2A38931100299F2A /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C9DD5902A38D28500299F2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DD5912A38D2A200299F2A /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				8C9DD5722A388C2D00299F2A /* SceneDelegate.swift in Sources */,
 				8C9DD58B2A38931100299F2A /* UIView+Extension.swift in Sources */,
 				8C9DD5882A388FF800299F2A /* OnboardingViewController.swift in Sources */,
+				8C9DD5922A38D2A200299F2A /* HomeViewController.swift in Sources */,
 				8C9DD58F2A3896C500299F2A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
