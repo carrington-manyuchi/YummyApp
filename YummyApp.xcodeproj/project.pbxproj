@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8C9DD5702A388C2D00299F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD56F2A388C2D00299F2A /* AppDelegate.swift */; };
 		8C9DD5722A388C2D00299F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD5712A388C2D00299F2A /* SceneDelegate.swift */; };
-		8C9DD5742A388C2D00299F2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD5732A388C2D00299F2A /* ViewController.swift */; };
 		8C9DD5772A388C2D00299F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9DD5752A388C2D00299F2A /* Main.storyboard */; };
 		8C9DD5792A388C2E00299F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9DD5782A388C2E00299F2A /* Assets.xcassets */; };
 		8C9DD57C2A388C2E00299F2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9DD57A2A388C2E00299F2A /* LaunchScreen.storyboard */; };
+		8C9DD5882A388FF800299F2A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD5872A388FF800299F2A /* OnboardingViewController.swift */; };
+		8C9DD58B2A38931100299F2A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD58A2A38931100299F2A /* UIView+Extension.swift */; };
+		8C9DD58D2A38940B00299F2A /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD58C2A38940B00299F2A /* OnboardingSlide.swift */; };
+		8C9DD58F2A3896C500299F2A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD58E2A3896C500299F2A /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C9DD56C2A388C2D00299F2A /* YummyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9DD56F2A388C2D00299F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C9DD5712A388C2D00299F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C9DD5732A388C2D00299F2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C9DD5762A388C2D00299F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C9DD5782A388C2E00299F2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9DD57B2A388C2E00299F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C9DD57D2A388C2E00299F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9DD5872A388FF800299F2A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		8C9DD58A2A38931100299F2A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8C9DD58C2A38940B00299F2A /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		8C9DD58E2A3896C500299F2A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		8C9DD56E2A388C2D00299F2A /* YummyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8C9DD5892A3892EF00299F2A /* Extensions */,
+				8C9DD5852A388F9900299F2A /* CustomViews */,
+				8C9DD5842A388F9100299F2A /* Views */,
+				8C9DD5832A388F8600299F2A /* Models */,
 				8C9DD56F2A388C2D00299F2A /* AppDelegate.swift */,
 				8C9DD5712A388C2D00299F2A /* SceneDelegate.swift */,
-				8C9DD5732A388C2D00299F2A /* ViewController.swift */,
 				8C9DD5752A388C2D00299F2A /* Main.storyboard */,
 				8C9DD5782A388C2E00299F2A /* Assets.xcassets */,
 				8C9DD57A2A388C2E00299F2A /* LaunchScreen.storyboard */,
 				8C9DD57D2A388C2E00299F2A /* Info.plist */,
 			);
 			path = YummyApp;
+			sourceTree = "<group>";
+		};
+		8C9DD5832A388F8600299F2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DD58C2A38940B00299F2A /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C9DD5842A388F9100299F2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DD5862A388FB500299F2A /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C9DD5852A388F9900299F2A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8C9DD5862A388FB500299F2A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DD5872A388FF800299F2A /* OnboardingViewController.swift */,
+				8C9DD58E2A3896C500299F2A /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8C9DD5892A3892EF00299F2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DD58A2A38931100299F2A /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9DD5742A388C2D00299F2A /* ViewController.swift in Sources */,
+				8C9DD58D2A38940B00299F2A /* OnboardingSlide.swift in Sources */,
 				8C9DD5702A388C2D00299F2A /* AppDelegate.swift in Sources */,
 				8C9DD5722A388C2D00299F2A /* SceneDelegate.swift in Sources */,
+				8C9DD58B2A38931100299F2A /* UIView+Extension.swift in Sources */,
+				8C9DD5882A388FF800299F2A /* OnboardingViewController.swift in Sources */,
+				8C9DD58F2A3896C500299F2A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
