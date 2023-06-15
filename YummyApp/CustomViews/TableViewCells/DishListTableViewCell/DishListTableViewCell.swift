@@ -1,0 +1,33 @@
+//
+//  DishListTableViewCell.swift
+//  YummyApp
+//
+//  Created by DA MAC M1 157 on 2023/06/15.
+//
+
+import UIKit
+
+class DishListTableViewCell: UITableViewCell {
+    
+    static let identifier = "DishListTableViewCell"
+
+    @IBOutlet weak var dishImageView: UIImageView!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var descriptionLbl: UILabel!
+    
+    
+    func setup(dish: Dish) {
+        
+        dishImageView.kf.setImage(with: dish.image?.asUrl)
+        titleLbl.text = dish.name
+        descriptionLbl.text = dish.descrption
+    }
+    
+    
+    func setup(order: Order) {
+        dishImageView.kf.setImage(with: order.dish?.image?.asUrl)
+        titleLbl.text = order.dish?.name
+        descriptionLbl.text = order.name
+    }
+     
+}
