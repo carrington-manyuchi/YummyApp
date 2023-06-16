@@ -6,35 +6,40 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ListOrdersViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var orders: [Order] = [
-        .init(id: "id1", name: "Carrington Manyuchi", dish: .init(id: "id1", name: "Pap and Samp", descrption: "Best meal ever", image: "https://picsum.photos/100/200", calories: 48.51543234)),
-        
-        .init(id: "id2", name: "Kamila", dish: .init(id: "id4", name: "Rice and Chicken", descrption: "Modern Receipe best meal ever", image: "https://picsum.photos/100/200", calories: 48.51543234)),
-        
-        .init(id: "id3", name: "Josy Manyuchi", dish: .init(id: "id3", name: "Rice and Goat", descrption: "Traditional foon and best meal ever", image: "https://picsum.photos/100/200", calories: 48.51543234))
-    ]
-    
+    var orders: [Order] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         registerCells()
-        
         title = "Orders"
+        ProgressHUD.show()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NetworkService.shared.fetchOrders { [weak self] result in
+            switch result {
+                
+            case .success(let orders):
+                ProgressHUD.dismiss()
+                self?.orders = orders
+                self?.tableView.reloadData()
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     
     private func registerCells() {
         tableView.register(UINib(nibName: DishListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: DishListTableViewCell.identifier)
     }
-
 }
-
-
 
 extension ListOrdersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,7 +52,6 @@ extension ListOrdersViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setup(order: orders[indexPath.row])
         return cell 
     }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = DishDetailViewController.instantiate()

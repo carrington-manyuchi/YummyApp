@@ -20,7 +20,7 @@ class DishListTableViewCell: UITableViewCell {
         
         dishImageView.kf.setImage(with: dish.image?.asUrl)
         titleLbl.text = dish.name
-        descriptionLbl.text = dish.descrption
+        descriptionLbl.text = dish.description
     }
     
     

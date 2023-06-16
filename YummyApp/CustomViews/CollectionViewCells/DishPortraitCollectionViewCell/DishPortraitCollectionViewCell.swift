@@ -20,7 +20,7 @@ class DishPortraitCollectionViewCell: UICollectionViewCell {
         titleLbl.text = dish.name
         dishImageView.kf.setImage(with: dish.image?.asUrl)
         caloriesLbl.text = dish.formattedCalories
-        descriptionLbl.text = dish.descrption
+        descriptionLbl.text = dish.description
     } 
     
 }

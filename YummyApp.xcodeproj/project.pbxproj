@@ -17,6 +17,12 @@
 		8C2C0EC62A3B77770080E1AC /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0EC52A3B77770080E1AC /* ListDishesViewController.swift */; };
 		8C2C0EC92A3B84B90080E1AC /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0EC82A3B84B90080E1AC /* ListOrdersViewController.swift */; };
 		8C2C0ECB2A3B872E0080E1AC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0ECA2A3B872E0080E1AC /* Order.swift */; };
+		8C2C0ECE2A3C3CCF0080E1AC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0ECD2A3C3CCF0080E1AC /* NetworkService.swift */; };
+		8C2C0ED02A3C3DC40080E1AC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0ECF2A3C3DC40080E1AC /* Route.swift */; };
+		8C2C0ED22A3C3E5D0080E1AC /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0ED12A3C3E5D0080E1AC /* Method.swift */; };
+		8C2C0ED42A3C4C420080E1AC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0ED32A3C4C420080E1AC /* AppError.swift */; };
+		8C2C0ED62A3C54700080E1AC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0ED52A3C54700080E1AC /* APIResponse.swift */; };
+		8C2C0ED82A3C6EA10080E1AC /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C0ED72A3C6EA10080E1AC /* AllDishes.swift */; };
 		8C9DD5702A388C2D00299F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD56F2A388C2D00299F2A /* AppDelegate.swift */; };
 		8C9DD5722A388C2D00299F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DD5712A388C2D00299F2A /* SceneDelegate.swift */; };
 		8C9DD5772A388C2D00299F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9DD5752A388C2D00299F2A /* Main.storyboard */; };
@@ -49,6 +55,12 @@
 		8C2C0EC52A3B77770080E1AC /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		8C2C0EC82A3B84B90080E1AC /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		8C2C0ECA2A3B872E0080E1AC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		8C2C0ECD2A3C3CCF0080E1AC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8C2C0ECF2A3C3DC40080E1AC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		8C2C0ED12A3C3E5D0080E1AC /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		8C2C0ED32A3C4C420080E1AC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		8C2C0ED52A3C54700080E1AC /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		8C2C0ED72A3C6EA10080E1AC /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
 		8C9DD56C2A388C2D00299F2A /* YummyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9DD56F2A388C2D00299F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C9DD5712A388C2D00299F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +154,18 @@
 			path = ListOrders;
 			sourceTree = "<group>";
 		};
+		8C2C0ECC2A3C3CBB0080E1AC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8C2C0ECD2A3C3CCF0080E1AC /* NetworkService.swift */,
+				8C2C0ECF2A3C3DC40080E1AC /* Route.swift */,
+				8C2C0ED12A3C3E5D0080E1AC /* Method.swift */,
+				8C2C0ED32A3C4C420080E1AC /* AppError.swift */,
+				8C2C0ED52A3C54700080E1AC /* APIResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		8C9DD5632A388C2D00299F2A = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +187,7 @@
 		8C9DD56E2A388C2D00299F2A /* YummyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8C2C0ECC2A3C3CBB0080E1AC /* Networking */,
 				8C9DD5892A3892EF00299F2A /* Extensions */,
 				8C9DD5852A388F9900299F2A /* CustomViews */,
 				8C9DD5842A388F9100299F2A /* Views */,
@@ -184,6 +209,7 @@
 				8C9DD5992A3ADFD800299F2A /* DishCategory.swift */,
 				8C9DD5A52A3B2D8E00299F2A /* Dish.swift */,
 				8C2C0ECA2A3B872E0080E1AC /* Order.swift */,
+				8C2C0ED72A3C6EA10080E1AC /* AllDishes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -408,18 +434,24 @@
 				8C9DD5972A39D8A900299F2A /* CategoryCollectionViewCell.swift in Sources */,
 				8C9DD58D2A38940B00299F2A /* OnboardingSlide.swift in Sources */,
 				8C9DD5702A388C2D00299F2A /* AppDelegate.swift in Sources */,
+				8C2C0ED82A3C6EA10080E1AC /* AllDishes.swift in Sources */,
 				8C9DD5722A388C2D00299F2A /* SceneDelegate.swift in Sources */,
+				8C2C0ED22A3C3E5D0080E1AC /* Method.swift in Sources */,
 				8C9DD58B2A38931100299F2A /* UIView+Extension.swift in Sources */,
 				8C9DD5882A388FF800299F2A /* OnboardingViewController.swift in Sources */,
 				8C2C0EBB2A3B597D0080E1AC /* DishDetailViewController.swift in Sources */,
 				8C9DD5922A38D2A200299F2A /* HomeViewController.swift in Sources */,
 				8C9DD59A2A3ADFD800299F2A /* DishCategory.swift in Sources */,
+				8C2C0ED02A3C3DC40080E1AC /* Route.swift in Sources */,
+				8C2C0ECE2A3C3CCF0080E1AC /* NetworkService.swift in Sources */,
 				8C2C0EB72A3B447A0080E1AC /* DishLandscapeCollectionViewCell.swift in Sources */,
 				8C9DD59C2A3AECB300299F2A /* String+Extension.swift in Sources */,
 				8C9DD59F2A3AFE8700299F2A /* CardView.swift in Sources */,
 				8C2C0EC62A3B77770080E1AC /* ListDishesViewController.swift in Sources */,
+				8C2C0ED42A3C4C420080E1AC /* AppError.swift in Sources */,
 				8C9DD58F2A3896C500299F2A /* OnboardingCollectionViewCell.swift in Sources */,
 				8C9DD5A62A3B2D8E00299F2A /* Dish.swift in Sources */,
+				8C2C0ED62A3C54700080E1AC /* APIResponse.swift in Sources */,
 				8C9DD5A32A3B0E4D00299F2A /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
